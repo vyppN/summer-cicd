@@ -1,9 +1,10 @@
 {
   "name": "summer-cicd",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -r tsx *.test.ts",
+    "dev": "ts-node server.ts"
   },
   "author": "",
   "license": "ISC",
@@ -13,11 +14,15 @@
     "express": "^5.1.0"
   },
   "devDependencies": {
-    "@types/chai": "^5.2.1",
-    "@types/mocha": "^10.0.10",
-    "chai": "^5.2.0",
-    "mocha": "^11.1.0",
-    "tsx": "^4.19.3",
-    "typescript": "^5.8.3"
+    "@types/chai": "5.2.1",
+    "@types/cors": "2.8.17",
+    "@types/express": "5.0.1",
+    "@types/mocha": "10.0.10",
+    "@types/node": "22.15.2",
+    "chai": "5.2.0",
+    "mocha": "11.1.0",
+    "ts-node": "10.9.2",
+    "tsx": "4.19.3",
+    "typescript": "5.8.3"
   }
 }
