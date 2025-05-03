@@ -16,3 +16,22 @@ HUERISTIC:
 - refactor: การ refactor code
 - feat: การเพิ่ม feature ใหม่
 ```
+
+## Git command
+```
+เอา repo ขึ้น git remote
+- git init
+- git add .
+- git commit -m “commit message”
+- git remote add origin [GIT_URI]
+- git push -u origin head
+
+เปลี่ยน commit message
+- git commit --amend -m “new commit message”
+
+เปลี่ยนชื่อ branch
+- git branch -m ชื่อใหม่
+
+แตก branch ใหม่จาก branch ที่เราอยู่
+git checkout -b ชื่อbranch
+```
